@@ -1,0 +1,1806 @@
+@font-face {
+    font-family: 'Miracle';
+    src: url("./fonts/Miracle\ Personal\ use.otf");
+}
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url("./fonts/HelveticaNeueLTProLt.otf");
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.yellow-text {
+    color: #FCD043 !important;
+}
+body {
+    overflow-x: hidden;
+}
+.header {
+    padding: 40px 22px;
+    display: flex;
+    justify-content: space-between;
+    background: #313f37;
+}
+.header__logo {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #E9E6DD;
+}
+.header__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 72px;
+    color: #E9E6DD;
+    margin-left: 30px;
+}
+.header__item {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #E9E6DD;    
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+}
+.hero {
+    background: #313f37;
+    padding: 7px 20px;
+}
+.hero__text-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.hero__img-container {
+    position: relative;
+    margin-bottom: 70px;
+}
+.hero__bg {
+    width: 100%;
+}
+.hero__title {
+    display: flex;
+    font-family: Miracle;
+    font-size: 170px;
+    font-weight: 400;
+    line-height: 207.06px;
+    color: #FFFCF6;
+    margin-bottom: 30px;
+}
+.hero__subtitle {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #FCD043;
+}
+.hero__content__container {
+    margin-top: 43px;
+}
+.hero__btn {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 40px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;    
+    color: #FFFCF6;
+    background: none;
+    border: 0.5px solid #FFFCF6;
+    border-radius: 50px;
+}
+.hero__content {
+    max-width: 300px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFCF6;    
+    margin-top: 97px;
+}
+.hero__btn__nav {
+    display: block;
+    width: 70px;
+    margin-top: 43px;
+}
+.hero__items {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 369px);
+    list-style: none;
+}
+.hero__bg__mobile {
+    display: none;
+}
+.hero__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 47px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFCF6;
+    background: #313F387A;
+
+}
+.yellow-item {
+    justify-content: center;
+    background: #FCD043;
+    color: #1B3B36;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;    
+}
+.hero__btn__mobile {
+    display: none;
+}
+
+.hero__description {
+    font-family: Helvetica Neue LT Std;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    color: #FFFCF6;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.text-right {
+    text-align: end;
+    text-decoration: none;
+}
+.about-us {
+    background: url("./img/about-bg.png"), #313f37;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 115px 20px 250px 20px;
+}
+.about-us__img__big {
+    width: 453px;
+}
+.about-us__text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-us__description {
+    position: relative;
+    right: 13px;
+}
+
+.about-us__title {
+    position: relative;
+    top: 78px;
+    right: 202px;
+    font-family: 'Miracle';
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 105px;    
+    color: #FFFCF6;
+    text-align: right;
+}
+.about-us__subtitle {
+    font-family: 'Miracle';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.85px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFCF6;
+}
+.about-us__content {
+    max-width: 400px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;   
+    color: #FFFCF6; 
+    margin-top: 40px;
+}
+.about-us__content-mobile {
+    display: none;
+}
+.about-us__img-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: stretch;
+}
+.about-us__icon {
+    position: absolute;
+    width: 115px;
+    top: -72px;
+    left: -75px;
+}
+.about-us__btn-img {
+    width: 150px;
+}
+.about-us__bg-mobile {
+    display: none;
+}
+.about-us__description-mobile {
+    display: none;
+}
+.rooms {
+    padding: 253px 20px;
+}
+.rooms__title-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 90px;
+    padding: 0px 10px;
+    margin-bottom: 150px;
+}
+.rooms__title {
+    font-family: 'Miracle';
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 105px;
+    text-align: left;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.rooms__subtitle {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-transform: uppercase;
+}
+.rooms__content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.rooms__nav {
+    padding-top: 49px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rooms__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 40px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;    
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        background: none;
+    border: 0.5px solid linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    border-radius: 50px;
+    position: relative;
+    top: 46px;
+}
+.rooms__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.rooms__text__title {
+    font-family: 'Miracle';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.85px;
+    letter-spacing: 0.03em;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.rooms__text__content {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
+    margin: 40px 0px 100px 0px;
+}
+.rooms__text__pages {
+    font-family: Helvetica Neue LT Std;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+        
+}
+.rooms__img-container {
+    position: relative;
+}
+.rooms-btn-nav-img {
+    width: 170px;
+}
+.rooms__btn__yellow {
+    position: absolute;
+    right: 49px;
+    bottom: 50px;
+}
+.rooms__btn__yellow-img {
+    width: 175px;
+}
+.facilities {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 20px;
+    gap: 90px;
+}
+.facilities__title {
+    font-family: 'Miracle';
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 105px;    
+    text-transform: uppercase;
+}
+.facilities__title__icon {
+    width: 52px;
+    margin: 0px 90px;
+    vertical-align: middle;
+}
+.facilities__subtitle {
+    position: absolute;
+    top: 43px;
+    left: 20px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.facilities__content {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
+    margin-top: 176px;
+    max-width: 367px;
+}
+.facilities__img-container {
+    align-self: end;
+}
+.facilities__img__kitchen-icon {
+    display: none;
+}
+.facilities__img__barmen {
+    position: relative;
+    bottom: 120px;
+}
+.facilities-list {
+    padding: 260px 20px 250px 20px;
+}
+.facilities-list__item-opened {
+    padding: 104px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.facilities-list__item-opened__btn-nav {
+    position: relative;
+    top: 101px;
+}
+.facilities-list__item-opened__btn-nav-img {
+    width: 170px;
+}
+.facilities-list__item-opened__number {
+    font-family: 'Miracle';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60.9px;  
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      
+}
+.facilities-list__item-opened__title {
+    font-family: 'Miracle';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));  
+    margin-top: 160px;
+}
+.facilities-list__item-opened__content {
+    max-width: 317px;
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;  
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));   
+}
+.facilities-list__item-opened__text-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 74px 90px 0px 0px;
+}
+.facilities-list__item {
+    padding: 49px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(49, 63, 56, 1);
+}
+.facilities-list__item__text-container {
+    display: flex;
+    gap: 100px;
+    position: relative;
+    right: 146px;
+}
+.facilities-list__item__number {
+    font-family: 'Miracle';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.facilities-list__item__title {
+    font-family: 'Miracle';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.03em;    
+}
+.facilities-list__item__btn-nav-img {
+    width: 88px;
+}
+.facilities-list__item-opened__img-mobile {
+    display: none;
+}
+.apartments {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/apartments-bg.svg);
+    background-size: cover;
+    padding: 99px 20px 300px 20px;
+    gap: 136px;
+}
+.apartments__title {
+    font-family: 'Miracle';
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 105px;
+    color: rgba(252, 208, 67, 1);   
+    text-transform: uppercase; 
+}
+.apartments__subtitle {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: rgba(252, 208, 67, 1);    
+    text-transform: uppercase;
+    max-width: 330px;
+}
+.gallery {
+    background: #313f37;
+    padding: 262px 0px 180px 0px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.gallery__icon {
+    width: 100px;
+}
+.gallery__title {
+    font-family: 'Miracle';
+    font-size: 125px;
+    font-weight: 400;
+    line-height: 105px;
+    text-transform: uppercase;    
+    color: rgba(252, 208, 67, 1); 
+}
+.gallery__subtitle {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: rgba(255, 252, 246, 1);
+    max-width: 425px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.gallery__img__main {
+    width: 690px;
+    
+}
+.gallery__text-container {
+    display: flex;
+    gap: 27px;
+    width: 690px;
+    margin-top: 20px;
+}
+.gallery__content {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26.4px;
+    text-align: left;
+    max-width: 350px;
+    color: rgba(255, 252, 246, 1);
+}
+.gallery__content__marker {
+    width: 50px;
+    vertical-align: middle;
+}
+.gallery__img-container {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+.gallery__img__top-left {
+    position: absolute;
+    left: 0px;
+    width: 256px;
+    top: 559px;
+}
+.gallery__img__top-right {
+    position: absolute;
+    right: 0px;
+    width: 236px;
+    top: 559px;
+}
+.gallery__img__bottom-left {
+    position: absolute;
+    left: 20px;
+    bottom: 549px;
+    width: 217px;
+}
+.gallery__img__bottom-right {
+    position: absolute;
+    right: 20px;
+    bottom: 337px;
+    width: 335px;
+    z-index: 1;
+}
+.gallery__logo {
+    font-family: 'Miracle';
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 120px;
+    text-align: left;
+    color: rgba(255, 252, 246, 0.5); /* Використання прозорості через колір */
+    white-space: nowrap;     /* Забороняє перенос тексту на новий рядок */
+    overflow: hidden;
+    margin-top: 79px;
+    opacity: 50%;
+}
+.gallery__logo__white {
+    color: rgba(255, 252, 246, 1);
+
+}
+.gallery__img-mobile__main {
+    display: none;
+}
+.gallery__img-mobile__reception {
+    display: none;
+}
+.gallery__img-mobile__mirror {
+    display: none;
+}
+.gallery__img-mobile__restaurant {
+    display: none;
+}
+.gallery__img-mobile__bath {
+    display: none;
+}
+.get-in-touch {
+    position: relative;
+    padding: 250px 20px 150px 20px;
+}
+.get-in-touch__bg-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 137px;
+    gap: 181px;
+    right: 0px;
+}
+.get-in-touch__bg {
+    width: 336px;
+}
+.get-in-touch__number {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;    
+}
+.get-in-touch__text {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-transform: uppercase;
+}
+.get-in-touch__title-container {
+    position: relative;
+    top: 274px;
+}
+.get-in-touch__title__black {
+    font-family: 'Miracle';
+    font-size: 250px;
+    font-weight: 400;
+    line-height: 250px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.get-in-touch__title__yellow {
+    font-family: 'Miracle';
+    font-size: 250px;
+    font-weight: 400;
+    line-height: 250px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(252, 208, 67, 1); 
+    margin-top: 40px;
+
+}
+.get-in-touch__title__icon {
+    width: 100px;
+    position: relative;
+    bottom: 38px;
+    left: 36px;
+}
+.get-in-touch__curve {
+    position: absolute;
+    bottom: 259px;
+    width: 103%;
+    left: -20px;
+}
+.get-in-touch__items__title {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 345px;
+}
+.get-in-touch__items {
+    display:inline-flex;
+    list-style: none;
+    border: 1px solid;
+    margin-top: 48px;
+}
+.get-in-touch__btn {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black
+}
+.get-in-touch__item {
+    display: flex;
+    align-items: center;
+    width: 247px;
+    justify-content: space-between;
+    padding: 49px 24px;
+}
+.green-btn {
+    background: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); 
+    width: 169px;
+    color: rgba(255, 252, 246, 1) !important;
+    text-align: center;
+}
+.get-in-touch__btn-mobile {
+    display: none;
+}
+.footer {
+    padding: 100px 20px;
+    border-top: 0.5px solid gray;
+}
+.footer__items {
+    display: flex;
+    list-style: none;
+    gap: 190px;
+}
+.footer__item__title {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 31.2px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer__content {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    max-width: 285px;
+}
+.footer__input {
+    padding: 22px 16px;
+    margin-top: 31px;
+    width: 246px;
+}
+.footer__socials {
+    display: flex;
+    list-style: none;
+    gap: 52px;
+}
+.footer__social-item__link {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black
+}
+.footer__mark {
+    font-family: 'Helvetica Neue LT Std';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: linear-gradient(0deg, #1B3B36, #1B3B36),
+linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+margin-top: 70px;
+}
+.footer__mark-mobile {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1140px) {
+    .header {
+        padding: 34px 22px;
+    }
+    .header__items {
+        display: none;
+    }
+    .header__item {
+        display: none;
+    }
+    .header__logo {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+    }
+    .hamburger {
+        display: block;
+        width: 45px;
+    }
+    .bar {
+        width: 100%;
+        height: 2px;
+        background:#FFFCF6;
+        margin: 6px 0px;
+    }
+    .hero {
+        padding: 0px 20px;
+    }
+    .hero__text-container {
+        align-items: start;
+        margin-bottom: 40px;
+    }
+    .hero__title {
+        font-family: 'Miracle';
+        font-size: 120px;
+        font-weight: 400;
+        line-height: 87.16px;  
+        margin-bottom: 47px;      
+    }
+    .hero__subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;        
+    }
+    .hero__content__container {
+        margin: 0px;
+        order: 3;
+    }
+    .hero__content {
+        max-width: 200px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-top: 0px;
+    }
+    .hero__btn {
+        display: none;
+    }
+    .hero__btn__nav {
+        width: 45px;
+        order: 2;
+        margin-top: 0px;
+    }
+    .hero__text-container {
+        margin-bottom: 0px;
+    }
+    .hero__items {
+        top: auto;
+        bottom: 0px;
+        width: 80%;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    .hero__item {
+        padding: 40px 47px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;        
+    }
+    .hero__img-container {
+        margin: 45px 0px;
+    }
+    .hero__description {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;        
+    }
+    .about-us {
+        padding: 115px 20px 202px 20px;
+        gap: 0px;
+    }
+
+    .about-us__img__big {
+        width: 357px;
+        height: 530px;
+    }
+    .about-us__title {
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 80px;  
+        top: 53px;
+        right: 247px;      
+    }
+    .about-us__description {
+        position: relative;
+        left: 76px;
+    }
+    .about-us__subtitle {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 34.1px;
+        letter-spacing: 0.03em;        
+    }
+    .about-us__content {
+        max-width: 250px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        margin-top: 27px;
+    }
+    .about-us__btn {
+        display: none;
+    }
+    .about-us__icon {
+        width: 98px;
+        top: -63px;
+    }
+    .about-us__img__little {
+        width: 160px;
+    }
+    .rooms {
+        padding: 203px 20px;
+    }
+    .rooms__title {
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 80px;        
+    }
+    .rooms__title-container {
+        gap: 60px;
+        padding: 0px;
+    }
+    .rooms__subtitle {
+        position: relative;
+        bottom: 80px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;        
+    }
+    .rooms__text {
+        align-self: flex-end;
+    }
+    .rooms__content-container {
+        gap: 15%;
+    }
+    .rooms__img__little {
+        display: none;
+    }
+    .rooms-btn-nav-img {
+        width: 105px;
+    }
+    .rooms__nav {
+        padding-top: 119px;
+    }
+    .rooms__img {
+        width: 355px;
+    }
+    .rooms__btn {
+        display: none;
+    }
+    .rooms__text__content {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;  
+        margin: 28px 0px 93px 0px;      
+    }
+    .rooms__btn__yellow {
+        right: 16px;
+        bottom: 12px;
+    }
+    .rooms__btn__yellow-img {
+        width: 120px;
+    }
+    .facilities {
+        gap: 145px;
+        justify-content: normal;
+        padding: 53px 20px;
+    }
+    .facilities__img__kitchen {
+        position: relative;
+        top: 40px;
+        width: 231px;
+    }
+    .facilities__img__barmen {
+        display: none;
+    }
+    .facilities__title {
+        font-family: 'Miracle';
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 80px;
+    }
+    .facilities__title__icon {
+        width: 43px;
+        margin: 0px 71px;
+    }
+    .facilities__content {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: left;
+        margin-top: 100px;
+        max-width: 265px;
+    }
+    .facilities__subtitle {
+        text-align: end;
+        right: 20px;
+        top: 55px;
+        left: auto;
+    }
+    .facilities-list__item-opened__img {
+        width: 356px;
+    }
+    .facilities__img__kitchen-icon {
+        position: absolute;
+        display: block;
+        width: 80px;
+        top: 7px;
+        right: -40px;
+    }
+    .facilities__img-container {
+        position: relative;
+        align-self: center;
+    }
+    .facilities-list {
+        margin: 0px;
+        padding: 0px 20px 195px 20px;
+    }
+    .facilities-list__item-opened {
+        padding: 46px 0px;
+        gap: 10px;
+        margin-bottom: 96px;
+    }
+    .facilities-list__item-opened__number {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.85px;
+    }
+    .facilities-list__item-opened__title {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.03em;  
+        margin-top: 123px;           
+    }
+    .facilities-list__item-opened__content {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        max-width: 250px;
+    }
+    .facilities-list__item-opened__btn-nav {
+        top: 44px;
+    }
+    .facilities-list__item-opened__btn-nav-img {
+        width: 105px;
+    }
+    .facilities-list__item-opened__img {
+        width: 356px;
+    }
+    .facilities-list__item-opened__text-container {
+        padding: 47px 0px;
+    }
+    .facilities-list__item {
+        padding: 32px 0px;
+    }
+    .facilities-list__item__bg {
+        width: 180px;
+    }
+    .facilities-list__item__number {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.85px;        
+    }
+    .facilities-list__item__title {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 43.85px;
+        letter-spacing: 0.03em;
+    }
+    .facilities-list__item__btn-nav-img {
+        width: 44px;
+    }
+    .facilities-list__item__text-container{
+        gap: 83px;
+        right: 113px;
+    }
+    .apartments {
+        padding: 48px 20px 151px 20px;
+        gap: 203px;
+    }
+    .apartments__title {
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 80px;        
+    }
+    .apartments__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;    
+        max-width: 231px;    
+    }
+    .gallery {
+        padding: 95px 20px;
+        gap: 30px;
+    }
+    .gallery__icon {
+        width: 70px;
+    }
+    .gallery__title {
+        font-size: 100px;
+        font-weight: 400;
+        line-height: 80px;        
+    }
+    .gallery__subtitle {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        max-width: 335px;
+    }
+    .gallery__img-container {
+        margin-top: 25px;
+    }
+    .gallery__img__main {
+        width: 480px;
+    }
+    .gallery__img__top-left {
+        width: 149px;
+        top: 351px;
+        height: 188px;
+    }
+    .gallery__img__top-right {
+        width: 146px;
+        top: 395px;
+    }
+    .gallery__img__bottom-left {
+        bottom: 389px;
+        width: 127px;
+    }
+    .gallery__img__bottom-right {
+        bottom: 211px;
+        width: 251px;
+    }
+    .gallery__text-container {
+        width: 480px;
+        right: 41px;
+        top: 17px;
+        gap: 14px;
+    }
+    .gallery__content__marker {
+        width: 36px;
+    }
+    .gallery__content {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 19.2px;
+        text-align: left;
+        max-width: 223px;
+    }
+    .gallery__logo {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 80px;
+        margin-top: 45px;        
+    }
+    .get-in-touch {
+        padding: 206px 20px 100px 20px;
+    }
+    .get-in-touch__number {
+        font-size: 38px;
+        font-weight: 400;
+        line-height: 45.6px;        
+    }
+    .get-in-touch__bg-container {
+        gap: 100px;
+        padding: 51px 0px;
+        right: 144px;
+    }
+    .get-in-touch__bg {
+        width: 232px;
+    }
+    .get-in-touch__title-container {
+        top: 196px;
+    }
+    .get-in-touch__title__black {
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 150px;
+        text-align: left;
+    }
+    .get-in-touch__title__yellow {
+        font-size: 150px;
+        font-weight: 400;
+        line-height: 150px;
+        text-align: right;
+        margin-top: 0px;
+    }
+    .get-in-touch__title__icon {
+        width: 70px;
+        bottom: 18px;
+        left: 14px;
+    }
+    .get-in-touch__curve {
+        bottom: 196px;
+    }
+    .get-in-touch__items__title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        margin-top: 246px;
+    }
+    .get-in-touch__items {
+        margin-top: 30px;
+    }
+    .get-in-touch__btn {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+    .get-in-touch__item {
+        width: 141px;
+        padding: 39px 24px;
+    }
+    .green-btn {
+        width: 180px;
+        text-align: center;
+    }
+    .footer {
+        padding: 69px 20px;
+    }
+    .footer__items {
+        gap: 139px;
+    }
+    .footer__item__title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .footer__mark {
+        margin-top: 50px;
+    }
+    .footer__content {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        max-width: 231px;
+    }
+    .footer__input {
+        width: 213px;
+        padding: 15px 16px;
+        margin-top: 27px;
+    }
+    .footer__socials {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer__social-item__link {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+}
+
+
+
+@media (max-width: 870px) {
+    .about-us__img-container {
+        position: absolute;
+    }
+    .rooms__content-container {
+        gap: 2%;
+    }
+    .facilities {
+        gap: 55px;
+    }
+    .facilities-list__item-opened {
+        gap: 15px;
+    }
+    .facilities-list__item__text-container {
+        right: 6px;
+    }
+    .gallery__img__main {
+        width: 430px;
+    }
+    .get-in-touch__bg-container {
+        right: 130px;
+    }
+
+}
+
+
+@media (max-width: 750px) {
+    .header {
+        padding: 24px 11px;
+    }
+    .hero {
+        padding: 0px 13px;
+    }
+    .hero__text-container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 42px;
+        margin-bottom: 0px;
+    }
+    .hero__title-container {
+        align-self: center;
+    }
+    .hero__title {
+        font-size: 80px;
+        font-weight: 400;
+        line-height: 97.44px; 
+        margin-bottom: 20px;       
+    }
+    .hero__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;
+        margin-bottom: 44px;
+    }
+    .hero__content__container {
+        align-self: center;
+    }
+    .hero__content {
+        max-width: 75%;
+        margin: 0px auto;
+    }
+    .hero__btn__nav {
+        display: none;
+    }
+    .hero__img-container {
+        margin-bottom: 43px;
+        margin-top: 37px;
+    }
+    .hero__bg {
+        display: none;
+    }
+    .hero__bg__mobile {
+        display: block;
+        width: 100%;
+    }
+    .hero__items {
+        display: none;
+    }
+    .hero__btn__mobile {
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    .hero__btn__mobile-img {
+        width: 120px;
+    }
+    .hero__contacts {
+        display: none;
+    }
+    .hero__description {
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 14.4px;
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .about-us {
+        padding: 84px 13px 64px 13px;
+        display: block;
+    }
+    .about-us__img__big {
+        display: none;
+    }
+    .about-us__bg-mobile {
+        width: 100%;
+        display: block;
+    }
+    .hero__text-container {
+        display: block;
+    }
+    .about-us__text-container {
+        gap: 62px;
+    }
+    .about-us__img-container {
+        display: none;
+    }
+    .about-us__title {
+        position: static;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;  
+        color: #FCD043;   
+        top: 0px;
+        right: 155px;
+    }
+    .about-us__description {
+        left: 0px;
+    }
+    .about-us__content {
+        display: none;
+    }
+    .about-us__content-mobile {
+        display: block;
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        color: #FFFCF6;    
+        margin-top: 13px;
+        width: 81%;
+    }
+    .about-us__icon-mobile {
+        width: 85px;
+        position: absolute;
+        top: -21px;
+        right: 14px;
+    }
+    .about-us__description-mobile {
+        display: flex;
+        align-items: start;
+    }
+    .rooms {
+        padding: 115px 16px 0px 16px;
+    }
+
+    .rooms__title-container {
+        display: block;
+        margin-bottom: 46px;
+    }
+    .rooms__title {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;        
+    }
+    .rooms__title__line-feed {
+        display: none;
+    }
+    .rooms__subtitle {
+        position: static;
+        max-width: 150px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.4px;  
+        margin: 44px 0px;      
+    }
+    .rooms__content-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .rooms__nav {
+        padding: 0px;
+    }
+    .rooms__text__container {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+    }
+    .rooms__text__title {
+        position: relative;
+        right: 62%;
+        order: 2;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;        
+    }
+    .rooms__text__content {
+        order: 3;
+        align-self: end;
+        max-width: 213px;
+        margin: 15px 0px 0px 0px;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;        
+    }
+    .rooms__text__pages {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px;        
+        order: 1;
+        align-self: end;
+    }
+
+    .rooms__img {
+        width: 100%;
+        height: 411px;
+    }
+    .rooms__btn__yellow {
+        right: 18px;
+        bottom: 19px;
+    }
+    .rooms__btn__nav {
+        position: relative;
+        bottom: 221px;
+    }
+    .rooms-btn-nav-img {
+        width: 70px;
+    }
+    .facilities {
+        flex-direction: column;
+        padding: 18px 20px;
+        align-items: center;
+    }
+    .facilities__text-container {
+        order: 2;
+    }
+    .facilities__img-container {
+        order: 1;
+        position: absolute;
+        top: 243px;
+    }
+    .facilities__title {
+        position: relative;
+        left: 20px;
+        font-family: 'Miracle';
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: left;
+    }
+    .facilities__title__icon {
+        width: 37px;
+        margin: 0px 35px;
+    }
+    .facilities__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.2px; 
+        text-transform: none;  
+        top: 19px;
+        right: 16px;
+    }
+    .facilities__img__kitchen-icon {
+        display: none;
+    }
+    .facilities__content {
+        margin-top: 212px;
+        max-width: 222px;
+        position: relative;
+        left: 89px;
+    }
+    .facilities__img__kitchen {
+        top: 0px;
+        width: 192px;
+    }
+    .facilities-list {
+        padding: 0px 20px 18px 20px;
+    }
+    .facilities-list__item-opened {
+        position: relative;
+        flex-direction: column-reverse;
+        padding-bottom: 0px;
+        margin-bottom: 7px;
+    }
+    .facilities-list__item-opened__img {
+        display: none;
+    }
+    .facilities-list__item-opened__img-mobile {
+        display: block;
+        width: 100%;
+    }
+    .facilities-list__item-opened__number {
+        position: absolute;
+        left: 0px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;        
+    }
+    .facilities-list__item-opened__title {
+        position: relative;
+        right: 64px;
+        bottom: 7px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;        
+        margin-top: 0px;
+    }
+    .facilities-list__item-opened__content {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        max-width: 223px;        
+    }
+    .facilities-list__item-opened__text-container {
+        position: relative;
+        align-items: end;
+        gap: 10px;
+        padding-bottom: 0px;
+    }
+    .facilities-list__item-opened__btn-nav-img {
+        width: 70px;
+    }
+    .facilities-list__item-opened__btn-nav {
+        position: absolute;
+        left: 0px;
+        bottom: 63px;
+        top: auto;
+    }
+    .facilities-list__item {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        padding: 54px 0px 47px 0px;
+        gap: 33px;
+    }
+    .facilities-list__item__number {
+        position: absolute;
+        right: 0px;
+        top: 58px;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        
+    }
+    .facilities-list__item__bg {
+        width: 150px;
+    }
+    .facilities-list__item__title {
+        font-family: 'Miracle';
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+    }
+    .facilities-list__item__btn-nav {
+        display: none;
+    }
+    .facilities-list__item__text-container {
+        display: block;
+        position: static;
+    }
+    .apartments {
+        background-image: url("./img/apartments-mobile.svg");
+        background-size: cover;
+        padding: 66px 20px 62px 15px;
+        gap: 511px;
+    }
+    .apartments__title {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;        
+    }
+    .apartments__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+        max-width: 205px;
+        align-self: flex-end;
+    }
+    .gallery {
+        padding: 69px 20px;
+        gap: 21px;
+    }
+    .gallery__icon {
+        width: 65px;
+    }
+    .gallery__title {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 60px;
+        text-align: center;
+    }
+    .gallery__subtitle {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 23px;
+        text-align: center;
+    }
+    .gallery__img-container {
+        padding: 147px 0px 0px 0px;
+    }
+    .gallery__img__main {
+        display: none;
+    }
+    .gallery__img__bottom-left {
+        display: none;
+    }
+    .gallery__img__bottom-right {
+        display: none;
+    }
+    .gallery__img__top-left {
+        display: none;
+    }
+    .gallery__img__top-right {
+        display: none;
+    }
+    .gallery__logo {
+        display: none;
+    }
+    .gallery__text-container {
+        width: 100%;
+        margin-top: 74px;
+    }
+    .gallery__img-mobile__main {
+        position: relative;
+        z-index: 2;
+        display: block;
+        width: 187px;
+        margin: 0px auto;
+    }
+    .gallery__img-mobile__reception {
+        display: block;
+        position: absolute;
+        left: 16px;
+        top: 512px;
+        width: 146px;
+    }
+    .gallery__img-mobile__mirror {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 437px;
+        width: 119px;
+        z-index: 2;
+    }
+    .gallery__img-mobile__restaurant {
+        display: block;
+        position: absolute;
+        top: 526px;
+        width: 176px;
+        right: 0px;
+        opacity: 10%;
+    }
+    .gallery__img-mobile__bath {
+        display: block;
+        position: absolute;
+        left: 7px;
+        bottom: 156px;
+        opacity: 20%;
+    }
+    .get-in-touch {
+        padding: 93px 16px;
+    }
+    .get-in-touch__number {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+    .get-in-touch__title-container {
+        top: 178px;
+    }
+    .get-in-touch__title__black {
+        font-size: 84px;
+        font-weight: 400;
+        line-height: 84px;
+        text-align: left;
+    }
+    .get-in-touch__title__yellow {
+        font-size: 84px;
+        font-weight: 400;
+        line-height: 84px;
+        text-align: right;
+    }
+    .get-in-touch__title__icon {
+        width: 36px;
+    }
+    .get-in-touch__curve {
+        display: none;
+    }
+    .get-in-touch__items {
+        display: none;
+    }
+    .get-in-touch__items__title {
+        display: none;
+    }
+    .get-in-touch__bg-container{ 
+        right: 16px;
+        padding: 0px;
+        top: 182px;
+        gap: 197px;
+    }
+    .get-in-touch__bg {
+        width: 144px;
+        align-self: end;
+    }
+    .get-in-touch__btn-mobile {
+        position: relative;
+        top: 207px;
+    }
+    .get-in-touch__btn-mobile-img {
+        width: 117px;
+    }
+    .footer {
+        margin-top: 328px;
+        padding: 48px 20px;
+    }
+    .footer__items {
+        display: none;
+    }
+    .footer__mark-mobile {
+        display: block;
+        font-family: 'Helvetica Neue LT Std';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        
+    }
+
+}   
